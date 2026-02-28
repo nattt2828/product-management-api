@@ -42,18 +42,7 @@ INSTALLED_APPS = [
     'products',
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
-    'ALLOWED_VERSIONS': ['v1'],
-    'DEFAULT_VERSION': 'v1',
-}
 
-SPECTACULAR_SETTINGS = {
-    'TITLE': 'Product Management API',
-    'DESCRIPTION': 'Versioned API for managing products',
-    'VERSION': '1.0.0',
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
